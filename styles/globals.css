@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Orbitron', monospace;
+  background-color: #0e0e0e;
+}
+
+.glitch {
+  animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 2px 2px #f0f; }
+  25% { text-shadow: -2px -2px #0ff; }
+  50% { text-shadow: 2px -2px #f0f; }
+  75% { text-shadow: -2px 2px #0ff; }
+  100% { text-shadow: 2px 2px #f0f; }
+}
